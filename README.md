@@ -1,4 +1,4 @@
-<h1><b> Report assignment 3:<b> <h1>
+<b> Report assignment 3:<b>
 <br>
 Programed by: Amit Bibi and Lihi Belfer.
 <br>
