@@ -16,8 +16,6 @@ public class MyCoords implements coords_converter {
 		y = y/ln;
 		x = local_vector_in_meter.r2d(x);
 		y = local_vector_in_meter.r2d(y);
-		/*x = Double.parseDouble(new DecimalFormat("####.######").format(x));
-		y = Double.parseDouble(new DecimalFormat("####.######").format(y));*/
 		p.add(x,y,z);
 		return p;
 
@@ -37,9 +35,6 @@ public class MyCoords implements coords_converter {
 		double ln = Math.cos(gps0.x()*(Math.PI/180));
 		y = (Math.sin(Math.toRadians(y)))*6371000*ln;
 		double z = gps1.z()-gps0.z();
-		/*		x = Double.parseDouble(new DecimalFormat("####.#######").format(x));
-		y = Double.parseDouble(new DecimalFormat("####.#######").format(y));
-		z = Double.parseDouble(new DecimalFormat("####.#######").format(z));*/
 		Point3D p = new Point3D(x,y,z);
 		return p;
 	}
